@@ -1,5 +1,5 @@
 # My Website
 
 # Useful Links
-- Wikipedia BibTeX Generator ([link](javascript:window.location='https://irl.github.io/bibwiki/?q=%27+window.location;))
+- Wikipedia BibTeX Generator ([link](https://irl.github.io/bibwiki/))
 - CiteDrive ([link](https://www.citedrive.com/en/); [app link](https://app.citedrive.com/))
