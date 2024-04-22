@@ -1,0 +1,67 @@
+project:
+  type: website
+  output-dir: docs
+  preview:
+    port: 4200
+
+execute: 
+  freeze: auto
+
+website:
+  back-to-top-navigation: true
+  google-analytics: 
+    tracking-id: "G-QE8LNDL51S"
+  page-footer: 
+    left: "© 2024 Jacob Bumgarner, Ph.D."
+    border: false
+  navbar:
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Learning Collection"
+        file: learning.qmd
+      - text: "About"
+        file: about.qmd
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/jacob-bumgarner/
+      - icon: twitter
+        href: https://twitter.com
+      - text: "{{< iconify material-symbols school >}}"
+        href: https://scholar.google.com/citations?user=7OYh18AAAAAJ&hl=en
+      - icon: github
+        menu:
+          - text: GitHub Profile
+            href: https://github.com/jacobbumgarner
+          - text: Source Code
+            href: https://github.com/jacobbumgarner/jacobbumgarner.github.io
+  search:
+    location: navbar
+    type: textbox
+
+  sidebar:
+    - id: learning
+      style: "docked" 
+      collapse-level: 1
+      contents:
+        - learning.qmd
+        - text: "---"
+        # - text: "<b>Linear Algebra</b>"
+        - section: learning_posts/linear_algebra.qmd
+          contents: learning_posts/linear_algebra/*
+        # - section: "<b>Linear Algebra</b>"
+        #   contents: learning_posts/linear_algebra/*
+        # - section: "<b>Statistics</b>"
+        #   contents: 
+        # - section: "<b>Machine Learning</b>"
+        #   contents: 
+        # - section: "<b>Deep Learning</b>"
+        #   contents: 
+        # - section: "<b>Bioinformatics</b>"
+        #   contents: 
+
+format:
+  html:
+    theme: cosmo  
+    css: styles.css
+

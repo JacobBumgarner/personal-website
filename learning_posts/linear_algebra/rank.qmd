@@ -1,0 +1,6 @@
+---
+title: "Matrix Rank"
+format: 
+    html:
+        toc: true
+---

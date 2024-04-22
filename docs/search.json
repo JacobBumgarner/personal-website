@@ -1,0 +1,61 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "",
+    "section": "",
+    "text": "About\nMy name is Jacob Bumgarner.\nI’m a passionate learner, and I learn best when I’m creating and writing. This website is a central hub for the lessons I’ve created from my studies.\n\n\nCareer\nI’m currently a bioinformatics scientist working in predictive sciences for drug development.\n\n\nEducation\nPrior to starting my career, I was a doctoral student at West Virginia University from 2019-2023, where I studied circadian rhythms, pain, and cerebrovasculature in Randy Nelson’s lab.\nBefore that, I was a pianist from 2015-2019 at West Virginia University, where I studied piano performance with Ching-Wen Hsiao and learned the ropes of research in Paul Lockman’s lab.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "Welcome to my website. It’s currently a work in progress…\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "learning_posts/linear_algebra/rank.html",
+    "href": "learning_posts/linear_algebra/rank.html",
+    "title": "Matrix Rank",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Learning Collection",
+      "Linear Algebra",
+      "Matrix Rank"
+    ]
+  },
+  {
+    "objectID": "learning_posts/linear_algebra/vectors.html",
+    "href": "learning_posts/linear_algebra/vectors.html",
+    "title": "Vectors",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Learning Collection",
+      "Linear Algebra",
+      "Vectors"
+    ]
+  },
+  {
+    "objectID": "learning_posts/linear_algebra.html",
+    "href": "learning_posts/linear_algebra.html",
+    "title": "Linear Algebra",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Learning Collection",
+      "Linear Algebra"
+    ]
+  },
+  {
+    "objectID": "learning.html",
+    "href": "learning.html",
+    "title": "Learning Collection",
+    "section": "",
+    "text": "Construction in progress… \nWelcome to my learning repository.\n\n\n\n Back to top",
+    "crumbs": [
+      "Learning Collection"
+    ]
+  }
+]
