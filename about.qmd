@@ -29,6 +29,9 @@ website is a central hub for the lessons I've created from my studies.
 I'm currently a bioinformatics scientist working in predictive sciences for 
 drug development. 
 
+I am experienced in bioinformatics, analytics, software engineering, and 
+machine learning.
+
 ### Education 
 Prior to starting my career, I was a doctoral student at West Virginia
 University from 2019-2023, where I studied circadian rhythms, pain, and
