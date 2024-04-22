@@ -1,5 +1,5 @@
 ---
-pagetitle: "Aboute"
+pagetitle: "About"
 image: www/headshot_2023.jpg
 about:
   template: trestles
