@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "",
     "section": "",
-    "text": "About\nMy name is Jacob Bumgarner.\nI’m a passionate learner, and I learn best when I’m creating and writing. This website is a central hub for the lessons I’ve created from my studies.\nPlease feel free to contact me at any of my listed links.\n\n\nCareer\nI’m currently a bioinformatics scientist working in predictive sciences for drug development.\nI am experienced in bioinformatics, analytics, software engineering, and machine learning.\n\n\nEducation\nPrior to starting my career, I was a doctoral student at West Virginia University from 2019-2023, where I studied circadian rhythms, pain, and cerebrovasculature in Randy Nelson’s lab.\nBefore that, I was a pianist from 2015-2019 at West Virginia University, where I studied piano performance with Ching-Wen Hsiao and learned the ropes of research in Paul Lockman’s lab.\n\n\n\n Back to top"
+    "text": "About\nMy name is Jacob Bumgarner. I’m a passionate learner, and I learn best when I’m creating and writing. This website is a hub for the lessons I create during my studies.\nPlease feel free to contact me at any of my listed links.\n\n\nCareer\nI’m currently a bioinformatics scientist working in predictive sciences for drug development.\nI am experienced in bioinformatics, analytics, software engineering, and machine learning.\n\n\nEducation\nPrior to starting my career, I completed my Ph.D. in Neuroscience at West Virginia University from 2019-2023, where I studied circadian rhythms, pain, and cerebrovasculature in Randy Nelson’s lab.\nBefore that, I was a completed my B.M. (Bachelor of Music) from 2015-2019 at West Virginia University, where I studied piano performance with Ching-Wen Hsiao and learned the ropes of biomedical research in Paul Lockman’s lab.\n\n\n\n Back to top"
   },
   {
     "objectID": "index.html",
@@ -42,7 +42,7 @@
     "href": "learning_posts/linear_algebra.html",
     "title": "Linear Algebra",
     "section": "",
-    "text": "Back to top",
+    "text": "This section is all about linear algebra.\nThanks to Gilbert Strang.\n\n\n\n Back to top",
     "crumbs": [
       "Learning Collection",
       "Linear Algebra"
@@ -53,9 +53,143 @@
     "href": "learning.html",
     "title": "Learning Collection",
     "section": "",
-    "text": "Construction in progress… \nWelcome to my learning repository.\n\n\n\n Back to top",
+    "text": "Construction in progress… \nWelcome to my learning collection. The educational articles in this collection were created for the educational benefit of myself and others.\n\nOverview\nEach article is created with the Feynman technique in mind, drawing inspiration from expert educators, including Grant Sanderson, Steve Mould, Gilbert Strang, and Destin Sandlin.\nBy writing these articles, I hope to distill the fundamental gist of each topic such that anyone can understand them. Of course, the topics I cover aren’t exhaustive and aren’t meant to replace textbooks or other online learning mediums. Instead, I hope they act as foundations for the introduction to topics or supplemental materials for the mastery of topics.\n\n\nTopics\nBelow is a list of the topics with covered material. Many of these topics have sub-sections, which can be opened by clicking the dropdown arrows.\n\nStatistics\nLinear Algebra\nMachine Learning\nDeep Learning\nBioinformatics\n\n\n\nResources\nBelow is a list of the resources I use to create these articles.\n\nManim\nCiteDrive\nQuarto\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Learning Collection"
+    ]
+  },
+  {
+    "objectID": "learning.html#topics",
+    "href": "learning.html#topics",
+    "title": "Learning Collection",
+    "section": "Topics",
+    "text": "Topics\nBelow is a list of the topics with covered material. Many of these topics have sub-sections, which can be opened by clicking the dropdown arrows.\n\nStatistics\nLinear Algebra\nMachine Learning\nDeep Learning\nBioinformatics",
+    "crumbs": [
+      "Learning Collection"
+    ]
+  },
+  {
+    "objectID": "learning.html#footnotes",
+    "href": "learning.html#footnotes",
+    "title": "Learning Collection",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n1↩︎",
+    "crumbs": [
+      "Learning Collection"
+    ]
+  },
+  {
+    "objectID": "learning.html#statistics",
+    "href": "learning.html#statistics",
+    "title": "Learning Collection",
+    "section": "Statistics",
+    "text": "Statistics",
+    "crumbs": [
+      "Learning Collection"
+    ]
+  },
+  {
+    "objectID": "learning.html#linear-algebra",
+    "href": "learning.html#linear-algebra",
+    "title": "Learning Collection",
+    "section": "Linear Algebra",
+    "text": "Linear Algebra",
+    "crumbs": [
+      "Learning Collection"
+    ]
+  },
+  {
+    "objectID": "learning.html#overview",
+    "href": "learning.html#overview",
+    "title": "Learning Collection",
+    "section": "Overview",
+    "text": "Overview\nEach article is created with the Feynman technique in mind, drawing inspiration from expert educators, including Grant Sanderson, Steve Mould, Gilbert Strang, and Destin Sandlin.\nBy writing these articles, I hope to distill the fundamental gist of each topic such that anyone can understand them. Of course, the topics I cover aren’t exhaustive and aren’t meant to replace textbooks or other online learning mediums. Instead, I hope they act as foundations for the introduction to topics or supplemental materials for the mastery of topics.",
+    "crumbs": [
+      "Learning Collection"
+    ]
+  },
+  {
+    "objectID": "learning_posts/statistics.html",
+    "href": "learning_posts/statistics.html",
+    "title": "Statistics",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Learning Collection",
+      "Statistics"
+    ]
+  },
+  {
+    "objectID": "learning_posts/statistics/correlation.html",
+    "href": "learning_posts/statistics/correlation.html",
+    "title": "Correlation",
+    "section": "",
+    "text": "To evaluate the relationship between two variables, one can measure their correlation.",
+    "crumbs": [
+      "Learning Collection",
+      "Statistics",
+      "Correlation"
+    ]
+  },
+  {
+    "objectID": "learning_posts/statistics/correlation/pearson.html",
+    "href": "learning_posts/statistics/correlation/pearson.html",
+    "title": "Pearson Correlation",
+    "section": "",
+    "text": "This is all about Pearson correlation.\n\n\n\n Back to top",
+    "crumbs": [
+      "Learning Collection",
+      "Statistics",
+      "Correlation",
+      "Pearson Correlation"
+    ]
+  },
+  {
+    "objectID": "learning_posts/statistics/correlation.html#references",
+    "href": "learning_posts/statistics/correlation.html#references",
+    "title": "Correlation",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "Learning Collection",
+      "Statistics",
+      "Correlation"
+    ]
+  },
+  {
+    "objectID": "learning_posts/statistics/correlation.html#overview",
+    "href": "learning_posts/statistics/correlation.html#overview",
+    "title": "Correlation",
+    "section": "",
+    "text": "To evaluate the relationship between two variables, one can measure their correlation.",
+    "crumbs": [
+      "Learning Collection",
+      "Statistics",
+      "Correlation"
+    ]
+  },
+  {
+    "objectID": "learning_posts/statistics/correlation.html#correlation-statistics",
+    "href": "learning_posts/statistics/correlation.html#correlation-statistics",
+    "title": "Correlation",
+    "section": "Correlation Statistics",
+    "text": "Correlation Statistics\n\nCoefficients\n\n\nP Values",
+    "crumbs": [
+      "Learning Collection",
+      "Statistics",
+      "Correlation"
+    ]
+  },
+  {
+    "objectID": "learning_posts/statistics/correlation.html#correlation-methods",
+    "href": "learning_posts/statistics/correlation.html#correlation-methods",
+    "title": "Correlation",
+    "section": "Correlation Methods",
+    "text": "Correlation Methods",
+    "crumbs": [
+      "Learning Collection",
+      "Statistics",
+      "Correlation"
     ]
   }
 ]

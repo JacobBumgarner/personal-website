@@ -1,0 +1,17 @@
+{
+  "hash": "a77a68e864dec120eb8584c95a82122b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Correlation\"\nformat:\n    html:\n        toc: true\n---\n\n\n## Overview\n\nTo evaluate the relationship between two variables, one can measure their\ncorrelation.\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](correlation_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n## Correlation Statistics\n### Coefficients\n\n### P Values\n\n\n## Correlation Methods\n\n## References\n::: {#refs}\n\n:::",
+    "supporting": [
+      "correlation_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

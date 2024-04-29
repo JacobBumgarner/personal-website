@@ -6,4 +6,34 @@ page-layout: article
 {{< iconify lucide construction >}} Construction in progress... {{< iconify
 lucide construction >}}
 
-Welcome to my learning repository. 
+Welcome to my learning collection. The educational articles in this collection
+were created for the educational benefit of myself and others.
+
+### Overview
+Each article is created with the [Feynman
+technique](https://www.colorado.edu/artssciences-advising/resource-library/life-skills/the-feynman-technique-in-academic-coaching)
+in mind, drawing inspiration from expert educators, including Grant Sanderson,
+Steve Mould, Gilbert Strang, and Destin Sandlin.
+
+By writing these articles, I hope to distill the fundamental gist of each topic
+such that anyone can understand them. Of course, the topics I cover aren't
+exhaustive and aren't meant to replace textbooks or other online learning
+mediums. Instead, I hope they act as foundations for the introduction to topics
+or supplemental materials for the mastery of topics.
+
+### Topics
+Below is a list of the topics with covered material. Many of these topics have
+sub-sections, which can be opened by clicking the dropdown arrows.
+
+1. Statistics
+2. Linear Algebra
+3. Machine Learning
+4. Deep Learning
+5. Bioinformatics
+
+### Resources
+Below is a list of the resources I use to create these articles.
+
+- Manim
+- CiteDrive
+- Quarto

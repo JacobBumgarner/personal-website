@@ -4,3 +4,7 @@ format:
     html:
         toc: true
 ---
+
+This section is all about linear algebra.
+
+Thanks to Gilbert Strang.

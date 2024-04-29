@@ -4,6 +4,10 @@ project:
   preview:
     port: 4200
 
+# Bibliography
+csl: www/csl/apa-numeric-superscript.csl
+bibliography: https://api.citedrive.com/bib/f47dc40d-e31d-4583-acfd-c3b6d6df2390/references.bib?x=eyJpZCI6ICJmNDdkYzQwZC1lMzFkLTQ1ODMtYWNmZC1jM2I2ZDZkZjIzOTAiLCAidXNlciI6ICIxMDI3MSIsICJzaWduYXR1cmUiOiAiY2M5ODNlYjZlMGQ0NGFjZWFlYmU2ZmQzODkzN2E4MTFkOTIzZjUyZmM3Y2M1MjQ4OWQwOWQzZDJmZjgyNGQzZiJ9
+
 execute: 
   freeze: auto
 
@@ -33,7 +37,7 @@ website:
         menu:
           - text: GitHub Profile
             href: https://github.com/jacobbumgarner
-          - text: Source Code
+          - text: Website Source Code
             href: https://github.com/jacobbumgarner/jacobbumgarner.github.io
   search:
     location: navbar
@@ -49,19 +53,20 @@ website:
         # - text: "<b>Linear Algebra</b>"
         - section: learning_posts/linear_algebra.qmd
           contents: learning_posts/linear_algebra/*
-        # - section: "<b>Linear Algebra</b>"
-        #   contents: learning_posts/linear_algebra/*
-        # - section: "<b>Statistics</b>"
-        #   contents: 
-        # - section: "<b>Machine Learning</b>"
-        #   contents: 
-        # - section: "<b>Deep Learning</b>"
-        #   contents: 
-        # - section: "<b>Bioinformatics</b>"
-        #   contents: 
+        - section: learning_posts/statistics.qmd
+          contents: 
+            - section: learning_posts/statistics/correlation.qmd
+              contents: learning_posts/statistics/correlation/*
 
 format:
   html:
-    theme: cosmo  
+    theme:
+      light: cosmo
+      dark: solar
     css: styles.css
 
+# themes:
+# 1. cosmo
+# 2. united
+# 3. flatly
+# 4. sandstone
