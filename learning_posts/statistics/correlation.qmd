@@ -1,0 +1,77 @@
+---
+title: "Correlation"
+format: 
+  html:
+    toc: true
+bibliography: https://api.citedrive.com/bib/f47dc40d-e31d-4583-acfd-c3b6d6df2390/references.bib?x=eyJpZCI6ICJmNDdkYzQwZC1lMzFkLTQ1ODMtYWNmZC1jM2I2ZDZkZjIzOTAiLCAidXNlciI6ICIxMDI3MSIsICJzaWduYXR1cmUiOiAiY2M5ODNlYjZlMGQ0NGFjZWFlYmU2ZmQzODkzN2E4MTFkOTIzZjUyZmM3Y2M1MjQ4OWQwOWQzZDJmZjgyNGQzZiJ9
+---
+
+## Overview
+In many data-driven contexts, we become interested in understanding the
+relationship between two variables. 
+
+For example, let's say we've run an experiment to test the effect of a novel
+drug on immune cell function. To test this drug, we treat 20 cultured dishes of
+immune cells ($n = 20$) with a single dose. As an outcome, we measure the
+concentration of two proteins from the treated cells: protein A and protein B.
+
+When we evaluate the results from the experiment, we can imagine different
+possible outcomes of the concentrations of proteins A and B in relation to one
+another:
+
+1. As protein A concentration *increases*, protein B concentration
+also *increases*
+2. As protein A concentration *increases*, protein B concentration does not
+change
+3. As protein A concentration *increases* protein B concentration *decreases*
+4. etc...
+
+As you may have gathered, an important nuance of this example is that we are not
+particularly interested in understanding whether the concentration of protein A
+*causes* the concentration of protein B to change, or vice versa. Instead, we
+only want to evaluate how their concentrations change in relation to one
+another. This type of *non-causal* evaluation is *symmetric* in nature.
+
+
+To evaluate symmetric relationships between two variables, one can examine their
+*correlation*. Formally, correlation is a measurement of the the strength, and
+sometimes direction, of a relationship between two variables
+[@wiki:Correlation]. When two variables are related to one another, such as in
+cases 1 and 3 from our example above, we say that they are correlated.
+
+Importantly, even if two variables are correlated, we **can not** use this
+correlation to make any assumptions about the *causal* nature of their 
+relationship, begging the adage: correlation $\neq$ causation.
+
+Regardless of whether the relationship between two variables is
+*causal* or not, correlation statistics still provide an indication of
+underlying relationships between 
+
+Often you will see that correlation tests evaluate *linear* relationships, but
+some correlation tests evaluate non-linear relationships as well.
+
+
+## Correlation Statistics
+### Coefficients
+The output of a correlation analysis is a *correlation statistic*. This 
+statistic will usually fall in the range of $-1$ to $1$, although depending 
+on the test used, it can sometimes fall between $0$ and $1$.
+
+### P Values
+<!-- P value stuff -->
+
+
+## Correlation Methods
+The next sections of the site contain overviews of several correlation tests.
+Each method has its own set of strengths and weakness, as well as assumptions
+that must be met before it can be used.
+
+For example, we would use a Pearson test to evaluate parametric correlations,
+and the Spearman test to evaluate non-parametric correlations.
+
+
+1. Pearson Correlation
+2. Spearman Rank-Order Correlation
+3. Kendall Rank Correlation
+4. Point-Biserial Correlation
+5. Distance Correlation
