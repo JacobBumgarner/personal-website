@@ -5,6 +5,7 @@
 .RData
 .RDataTmp
 .Ruserdata
+*.Rproj
 .Rproj.user/
 .Renviron
 .Rprofile
