@@ -1,6 +1,6 @@
 ---
 pagetitle: "About"
-image: www/headshot_2023.jpg
+image: www/headshot_2023.jpeg
 about:
   template: trestles
   image-shape: round

@@ -55,8 +55,7 @@ website:
           contents: learning_posts/linear_algebra/*
         - section: learning_posts/statistics.qmd
           contents: 
-            - section: learning_posts/statistics/correlation.qmd
-              contents: learning_posts/statistics/correlation/*
+            - learning_posts/statistics/variance/variance.qmd
 
 format:
   html:
