@@ -8,13 +8,18 @@ format:
 ## Overview
 
 **Variance** is a quantitative measurement of the *spread* of a set of data
-around the mean of the data.
+around the mean of the data. 
+
+We can use variance to describe the two different distributions shown in the
+figure below. The orange distribution has a larger variance than the red
+distribution because the sample data are more spread out around the mean.
 
 ![Varying Distributions](distributions.png){width=50%}
 
-In descriptive statistics, variance is used to describe the distribution of a
-sample or population. In inferential statistics, variance is a measurement used
-to measure the expected variability of a *random variable^a^*.
+There are two formal ways to define variance. Emperically, variance describes
+the distribution of observed data collected from a sample or population.
+Theoretically, variance describes the probability distribution of a *random
+variable^a^*.
 
 :::{.column-margin}
 
@@ -24,6 +29,14 @@ the sample space of a coin flip) to a measurable space (e.g., $\{ H: 0, T: 1
 [@wiki:Random_variable; @psu_stat500]. 
 
 :::
+
+In this article, we'll review the relationship between the two definitions of
+variance, but we'll focus on the empirical definition. We'll also discuss how
+variance is calculated and how it can be used to describe the spread of data.
+
+## Calculating Variance
+{{< iconify lucide construction >}} Construction in progress... {{< iconify
+lucide construction >}}
 
 ## References
 :::{#refs}

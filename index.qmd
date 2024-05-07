@@ -1,5 +1,51 @@
 ---
-pagetitle: "JRB Website Home"
+pagetitle: "About"
+image: www/headshot_2023.jpeg
+about:
+  template: trestles
+  image-shape: round
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/jacob-bumgarner/
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
+    - icon: github
+      text: Github
+      href: https://github.com/jacobbumgarner
+    - text: "{{< iconify material-symbols school >}} Google Scholar"
+      href: https://scholar.google.com/citations?user=7OYh18AAAAAJ&hl=en
+    - text: "{{< iconify material-symbols mail >}} Email"
+      href: mailto:jacobbum21@gmail.com
+
 ---
 
-Welcome to my website. It's currently a work in progress...
+### About
+My name is Jacob Bumgarner. I'm an avid learner with a passion for creating and
+writing. This website serves as a central hub for the insights and lessons I
+create while exploring new concepts and revisiting topics of interest.
+
+Please feel free to reach out or connect with me through the links above.
+
+### Career
+I am a bioinformatics scientist specializing in predictive sciences for drug
+development, currently part of a precision discovery team. We use reverse
+translational approaches to identify novel drug targets.
+
+My experience encompasses bioinformatics, data analytics, software engineering,
+and machine learning. I am driven by a passion for problem-solving and applying
+my skills to improve human health.
+
+### Education 
+Prior to starting my career, I completed my Ph.D. in Neuroscience at West
+Virginia University from 2019-2023, where I studied circadian rhythms, pain, and
+cerebrovasculature in [Randy
+Nelson's](https://medicine.hsc.wvu.edu/neuroscience/faculty-labs/randy-nelson-phd/)
+lab.
+
+Before that, I was a completed my B.M. (Bachelor of Music) from 2015-2019 at
+West Virginia University, where I studied piano performance with [Ching-Wen
+Hsiao](https://www.chingwenhsiao.com/) and learned the ropes of biomedical
+research in [Paul Lockman's](https://www.linkedin.com/in/paul-lockman-268b752a/)
+lab.

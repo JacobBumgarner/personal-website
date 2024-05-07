@@ -23,7 +23,7 @@ website:
       # - text: "Home"
       #   file: index.qmd
       - text: "About"
-        file: about.qmd
+        file: index.qmd
       - text: "Learning Collection"
         file: learning.qmd
     right:

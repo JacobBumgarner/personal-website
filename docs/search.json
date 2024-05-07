@@ -1,87 +1,23 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "",
+    "objectID": "learning.html",
+    "href": "learning.html",
+    "title": "Learning Collection",
     "section": "",
-    "text": "About\nMy name is Jacob Bumgarner. I’m an avid learner with a passion for creating and writing. This website serves as a central hub for the insights and lessons I create while exploring new concepts and revisiting topics of interest.\nPlease feel free to reach out or connect with me through the links above.\n\n\nCareer\nI am a bioinformatics scientist specializing in predictive sciences for drug development, currently part of a precision discovery team. We use reverse translational approaches to identify novel drug targets.\nMy experience encompasses bioinformatics, data analytics, software engineering, and machine learning. I am driven by a passion for problem-solving and applying my skills to improve human health.\n\n\nEducation\nPrior to starting my career, I completed my Ph.D. in Neuroscience at West Virginia University from 2019-2023, where I studied circadian rhythms, pain, and cerebrovasculature in Randy Nelson’s lab.\nBefore that, I was a completed my B.M. (Bachelor of Music) from 2015-2019 at West Virginia University, where I studied piano performance with Ching-Wen Hsiao and learned the ropes of biomedical research in Paul Lockman’s lab.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "",
-    "section": "",
-    "text": "Welcome to my website. It’s currently a work in progress…\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "learning_posts/statistics.html",
-    "href": "learning_posts/statistics.html",
-    "title": "Statistics",
-    "section": "",
-    "text": "Back to top",
+    "text": "Construction in progress… \nWelcome to my learning collection. The educational articles in this collection were created for the educational benefit of myself and others.\n\nOverview\nEach article is created with the Feynman technique in mind, drawing inspiration from expert educators, including Grant Sanderson, Steve Mould, Gilbert Strang, and Destin Sandlin.\nBy writing these articles, I hope to distill the fundamental gist of each topic such that anyone can understand them. Of course, the topics I cover aren’t exhaustive and aren’t meant to replace textbooks or other online learning mediums. Instead, I hope they act as foundations for the introduction to topics or supplemental materials for the mastery of topics.\n\n\nTopics\nBelow is a list of the topics with covered material. Many of these topics have sub-sections, which can be opened by clicking the dropdown arrows.\n\nStatistics\nLinear Algebra\nMachine Learning\nDeep Learning\nBioinformatics\n\n\n\nResources\nBelow is a list of the resources I use to create these articles.\n\nManim\nCiteDrive\nQuarto\n\n\n\n\n\n Back to top",
     "crumbs": [
-      "Learning Collection",
-      "Statistics"
+      "Learning Collection"
     ]
   },
   {
-    "objectID": "learning_posts/statistics/variance/variance.html",
-    "href": "learning_posts/statistics/variance/variance.html",
-    "title": "Variance - Draft",
+    "objectID": "learning_posts/linear_algebra.html",
+    "href": "learning_posts/linear_algebra.html",
+    "title": "Linear Algebra",
     "section": "",
-    "text": "Variance is a quantitative measurement of the spread of a set of data around the mean of the data.\n\n\n\nVarying Distributions\n\n\nIn descriptive statistics, variance is used to describe the distribution of a sample or population. In inferential statistics, variance is a measurement used to measure the expected variability of a random variablea.\n\n\naRandom variables are functions that map sample spaces (e.g., \\(\\{ H, T \\}\\) is the sample space of a coin flip) to a measurable space (e.g., \\(\\{ H: 0, T: 1\n\\}\\)). By definition, a random variable generates values that vary randomly1,2.",
+    "text": "This section is all about linear algebra.\nThanks to Gilbert Strang.\n\n\n\n Back to top",
     "crumbs": [
       "Learning Collection",
-      "Statistics",
-      "Variance - Draft"
-    ]
-  },
-  {
-    "objectID": "learning_posts/statistics/variance/variance.html#overview",
-    "href": "learning_posts/statistics/variance/variance.html#overview",
-    "title": "Variance - Draft",
-    "section": "",
-    "text": "Variance is a quantitative measurement of the spread of a set of data around the mean of the data.\n\n\n\nVarying Distributions\n\n\nIn descriptive statistics, variance is used to describe the distribution of a sample or population. In inferential statistics, variance is a measurement used to measure the expected variability of a random variablea.\n\n\naRandom variables are functions that map sample spaces (e.g., \\(\\{ H, T \\}\\) is the sample space of a coin flip) to a measurable space (e.g., \\(\\{ H: 0, T: 1\n\\}\\)). By definition, a random variable generates values that vary randomly1,2.",
-    "crumbs": [
-      "Learning Collection",
-      "Statistics",
-      "Variance - Draft"
-    ]
-  },
-  {
-    "objectID": "learning_posts/statistics/variance/variance.html#references",
-    "href": "learning_posts/statistics/variance/variance.html#references",
-    "title": "Variance - Draft",
-    "section": "References",
-    "text": "References\n\n\n1. Wikipedia. (2024). Random variable — Wikipedia, the free encyclopedia. http://en.wikipedia.org/w/index.php?title=Random%20variable.\n\n\n2. 3.1 - Random Variables  STAT 500. (2024). https://online.stat.psu.edu/stat500/lesson/3/3.1",
-    "crumbs": [
-      "Learning Collection",
-      "Statistics",
-      "Variance - Draft"
-    ]
-  },
-  {
-    "objectID": "learning_posts/linear_algebra/vectors.html",
-    "href": "learning_posts/linear_algebra/vectors.html",
-    "title": "Vectors",
-    "section": "",
-    "text": "Back to top",
-    "crumbs": [
-      "Learning Collection",
-      "Linear Algebra",
-      "Vectors"
-    ]
-  },
-  {
-    "objectID": "learning_posts/linear_algebra/rank.html",
-    "href": "learning_posts/linear_algebra/rank.html",
-    "title": "Matrix Rank",
-    "section": "",
-    "text": "Back to top",
-    "crumbs": [
-      "Learning Collection",
-      "Linear Algebra",
-      "Matrix Rank"
+      "Linear Algebra"
     ]
   },
   {
@@ -113,24 +49,93 @@
     "text": "Correlation Methods\nThe next sections of the site contain overviews of several correlation tests. Each method has its own set of strengths and weakness, as well as assumptions that must be met before it can be used.\nFor example, we would use a Pearson test to evaluate parametric correlations, and the Spearman test to evaluate non-parametric correlations.\n\nPearson Correlation\nSpearman Rank-Order Correlation\nKendall Rank Correlation\nPoint-Biserial Correlation\nDistance Correlation"
   },
   {
-    "objectID": "learning_posts/linear_algebra.html",
-    "href": "learning_posts/linear_algebra.html",
-    "title": "Linear Algebra",
+    "objectID": "learning_posts/linear_algebra/rank.html",
+    "href": "learning_posts/linear_algebra/rank.html",
+    "title": "Matrix Rank",
     "section": "",
-    "text": "This section is all about linear algebra.\nThanks to Gilbert Strang.\n\n\n\n Back to top",
+    "text": "Back to top",
     "crumbs": [
       "Learning Collection",
-      "Linear Algebra"
+      "Linear Algebra",
+      "Matrix Rank"
     ]
   },
   {
-    "objectID": "learning.html",
-    "href": "learning.html",
-    "title": "Learning Collection",
+    "objectID": "learning_posts/linear_algebra/vectors.html",
+    "href": "learning_posts/linear_algebra/vectors.html",
+    "title": "Vectors",
     "section": "",
-    "text": "Construction in progress… \nWelcome to my learning collection. The educational articles in this collection were created for the educational benefit of myself and others.\n\nOverview\nEach article is created with the Feynman technique in mind, drawing inspiration from expert educators, including Grant Sanderson, Steve Mould, Gilbert Strang, and Destin Sandlin.\nBy writing these articles, I hope to distill the fundamental gist of each topic such that anyone can understand them. Of course, the topics I cover aren’t exhaustive and aren’t meant to replace textbooks or other online learning mediums. Instead, I hope they act as foundations for the introduction to topics or supplemental materials for the mastery of topics.\n\n\nTopics\nBelow is a list of the topics with covered material. Many of these topics have sub-sections, which can be opened by clicking the dropdown arrows.\n\nStatistics\nLinear Algebra\nMachine Learning\nDeep Learning\nBioinformatics\n\n\n\nResources\nBelow is a list of the resources I use to create these articles.\n\nManim\nCiteDrive\nQuarto\n\n\n\n\n\n Back to top",
+    "text": "Back to top",
     "crumbs": [
-      "Learning Collection"
+      "Learning Collection",
+      "Linear Algebra",
+      "Vectors"
     ]
+  },
+  {
+    "objectID": "learning_posts/statistics/variance/variance.html",
+    "href": "learning_posts/statistics/variance/variance.html",
+    "title": "Variance - Draft",
+    "section": "",
+    "text": "Variance is a quantitative measurement of the spread of a set of data around the mean of the data.\nWe can use variance to describe the two different distributions shown in the figure below. The orange distribution has a larger variance than the red distribution because the sample data are more spread out around the mean.\n\n\n\nVarying Distributions\n\n\nThere are two formal ways to define variance. Emperically, variance describes the distribution of observed data collected from a sample or population. Theoretically, variance describes the probability distribution of a random variablea.\n\n\naRandom variables are functions that map sample spaces (e.g., \\(\\{ H, T \\}\\) is the sample space of a coin flip) to a measurable space (e.g., \\(\\{ H: 0, T: 1\n\\}\\)). By definition, a random variable generates values that vary randomly1,2.\nIn this article, we’ll review the relationship between the two definitions of variance, but we’ll focus on the empirical definition. We’ll also discuss how variance is calculated and how it can be used to describe the spread of data.",
+    "crumbs": [
+      "Learning Collection",
+      "Statistics",
+      "Variance - Draft"
+    ]
+  },
+  {
+    "objectID": "learning_posts/statistics/variance/variance.html#overview",
+    "href": "learning_posts/statistics/variance/variance.html#overview",
+    "title": "Variance - Draft",
+    "section": "",
+    "text": "Variance is a quantitative measurement of the spread of a set of data around the mean of the data.\nWe can use variance to describe the two different distributions shown in the figure below. The orange distribution has a larger variance than the red distribution because the sample data are more spread out around the mean.\n\n\n\nVarying Distributions\n\n\nThere are two formal ways to define variance. Emperically, variance describes the distribution of observed data collected from a sample or population. Theoretically, variance describes the probability distribution of a random variablea.\n\n\naRandom variables are functions that map sample spaces (e.g., \\(\\{ H, T \\}\\) is the sample space of a coin flip) to a measurable space (e.g., \\(\\{ H: 0, T: 1\n\\}\\)). By definition, a random variable generates values that vary randomly1,2.\nIn this article, we’ll review the relationship between the two definitions of variance, but we’ll focus on the empirical definition. We’ll also discuss how variance is calculated and how it can be used to describe the spread of data.",
+    "crumbs": [
+      "Learning Collection",
+      "Statistics",
+      "Variance - Draft"
+    ]
+  },
+  {
+    "objectID": "learning_posts/statistics/variance/variance.html#calculating-variance",
+    "href": "learning_posts/statistics/variance/variance.html#calculating-variance",
+    "title": "Variance - Draft",
+    "section": "Calculating Variance",
+    "text": "Calculating Variance\n Construction in progress…",
+    "crumbs": [
+      "Learning Collection",
+      "Statistics",
+      "Variance - Draft"
+    ]
+  },
+  {
+    "objectID": "learning_posts/statistics/variance/variance.html#references",
+    "href": "learning_posts/statistics/variance/variance.html#references",
+    "title": "Variance - Draft",
+    "section": "References",
+    "text": "References\n\n\n1. Wikipedia. (2024). Random variable — Wikipedia, the free encyclopedia. http://en.wikipedia.org/w/index.php?title=Random%20variable.\n\n\n2. 3.1 - Random Variables  STAT 500. (2024). https://online.stat.psu.edu/stat500/lesson/3/3.1",
+    "crumbs": [
+      "Learning Collection",
+      "Statistics",
+      "Variance - Draft"
+    ]
+  },
+  {
+    "objectID": "learning_posts/statistics.html",
+    "href": "learning_posts/statistics.html",
+    "title": "Statistics",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Learning Collection",
+      "Statistics"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "About\nMy name is Jacob Bumgarner. I’m an avid learner with a passion for creating and writing. This website serves as a central hub for the insights and lessons I create while exploring new concepts and revisiting topics of interest.\nPlease feel free to reach out or connect with me through the links above.\n\n\nCareer\nI am a bioinformatics scientist specializing in predictive sciences for drug development, currently part of a precision discovery team. We use reverse translational approaches to identify novel drug targets.\nMy experience encompasses bioinformatics, data analytics, software engineering, and machine learning. I am driven by a passion for problem-solving and applying my skills to improve human health.\n\n\nEducation\nPrior to starting my career, I completed my Ph.D. in Neuroscience at West Virginia University from 2019-2023, where I studied circadian rhythms, pain, and cerebrovasculature in Randy Nelson’s lab.\nBefore that, I was a completed my B.M. (Bachelor of Music) from 2015-2019 at West Virginia University, where I studied piano performance with Ching-Wen Hsiao and learned the ropes of biomedical research in Paul Lockman’s lab.\n\n\n\n Back to top"
   }
 ]
