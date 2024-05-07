@@ -20,12 +20,12 @@ website:
     border: false
   navbar:
     left:
-      - text: "Home"
-        file: index.qmd
-      - text: "Learning Collection"
-        file: learning.qmd
+      # - text: "Home"
+      #   file: index.qmd
       - text: "About"
         file: about.qmd
+      - text: "Learning Collection"
+        file: learning.qmd
     right:
       - icon: linkedin
         href: https://www.linkedin.com/in/jacob-bumgarner/

@@ -16,22 +16,26 @@ about:
       href: https://github.com/jacobbumgarner
     - text: "{{< iconify material-symbols school >}} Google Scholar"
       href: https://scholar.google.com/citations?user=7OYh18AAAAAJ&hl=en
+    - text: "{{< iconify material-symbols mail >}} Email"
+      href: mailto:jacobbum21@gmail.com
 
 ---
 
 ### About
-My name is Jacob Bumgarner. I'm a passionate learner, and I learn best when I'm
-creating and writing. This website is a hub for the lessons I create during my
-studies.
+My name is Jacob Bumgarner. I'm an avid learner with a passion for creating and
+writing. This website serves as a central hub for the insights and lessons I
+create while exploring new concepts and revisiting topics of interest.
 
-Please feel free to contact me at any of my listed links.
+Please feel free to reach out or connect with me through the links above.
 
 ### Career
-I'm currently a bioinformatics scientist working in predictive sciences for 
-drug development. 
+I am a bioinformatics scientist specializing in predictive sciences for drug
+development, currently part of a precision discovery team. We use reverse
+translational approaches to identify novel drug targets.
 
-I am experienced in bioinformatics, analytics, software engineering, and 
-machine learning.
+My experience encompasses bioinformatics, data analytics, software engineering,
+and machine learning. I am driven by a passion for problem-solving and applying
+my skills to improve human health.
 
 ### Education 
 Prior to starting my career, I completed my Ph.D. in Neuroscience at West
