@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Pearson Correlation</title>
+<title>Variance - Draft</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -78,11 +98,40 @@ gtag('js', new Date());
 gtag('config', 'G-QE8LNDL51S', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed fullcontent">
+<body class="nav-sidebar docked nav-fixed slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -151,7 +200,7 @@ gtag('config', 'G-QE8LNDL51S', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../learning_posts/statistics.html">Statistics</a></li><li class="breadcrumb-item"><a href="../../../learning_posts/statistics/correlation.html">Correlation</a></li><li class="breadcrumb-item"><a href="../../../learning_posts/statistics/correlation/pearson.html">Pearson Correlation</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../learning_posts/statistics.html">Statistics</a></li><li class="breadcrumb-item"><a href="../../../learning_posts/statistics/variance/variance.html">Variance - Draft</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -202,23 +251,12 @@ gtag('config', 'G-QE8LNDL51S', { 'anonymize_ip': true});
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../../learning_posts/statistics/correlation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Correlation</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../learning_posts/statistics/correlation/pearson.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Pearson Correlation</span></a>
+  <a href="../../../learning_posts/statistics/variance/variance.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Variance - Draft</span></a>
   </div>
 </li>
-      </ul>
-  </li>
       </ul>
   </li>
     </ul>
@@ -226,13 +264,22 @@ gtag('config', 'G-QE8LNDL51S', { 'anonymize_ip': true});
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../learning_posts/statistics.html">Statistics</a></li><li class="breadcrumb-item"><a href="../../../learning_posts/statistics/correlation.html">Correlation</a></li><li class="breadcrumb-item"><a href="../../../learning_posts/statistics/correlation/pearson.html">Pearson Correlation</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../learning_posts/statistics.html">Statistics</a></li><li class="breadcrumb-item"><a href="../../../learning_posts/statistics/variance/variance.html">Variance - Draft</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Pearson Correlation</h1>
+<h1 class="title">Variance - Draft</h1>
 </div>
 
 
@@ -249,9 +296,34 @@ gtag('config', 'G-QE8LNDL51S', { 'anonymize_ip': true});
 </header>
 
 
-<p>This is all about Pearson correlation.</p>
+<section id="overview" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p><strong>Variance</strong> is a quantitative measurement of the <em>spread</em> of a set of data around the mean of the data.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="distributions.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Varying Distributions</figcaption>
+</figure>
+</div>
+<p>In descriptive statistics, variance is used to describe the distribution of a sample or population. In inferential statistics, variance is a measurement used to measure the expected variability of a <em>random variable<sup>a</sup></em>.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><em><sup>a</sup>Random variables</em> are functions that map sample spaces (e.g., <span class="math inline">\(\{ H, T \}\)</span> is the sample space of a coin flip) to a measurable space (e.g., <span class="math inline">\(\{ H: 0, T: 1
+\}\)</span>). By definition, a random variable generates values that vary <em>randomly</em><span class="citation" data-cites="wiki:Random_variable psu_stat500"><sup><a href="#ref-wiki:Random_variable" role="doc-biblioref">1</a>,<a href="#ref-psu_stat500" role="doc-biblioref">2</a></sup></span>.</p>
+</div></div></section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-wiki:Random_variable" class="csl-entry" role="listitem">
+1. Wikipedia. (2024). <em><span class="nocase">Random variable</span> — <span>W</span>ikipedia<span>,</span> the free encyclopedia</em>. <a href="http://en.wikipedia.org/w/index.php?title=Random%20variable" class="uri">http://en.wikipedia.org/w/index.php?title=Random%20variable</a>.
+</div>
+<div id="ref-psu_stat500" class="csl-entry" role="listitem">
+2. <em>3.1 - <span>Random</span> <span>Variables</span> <span></span> <span>STAT</span> 500</em>. (2024). <a href="https://online.stat.psu.edu/stat500/lesson/3/3.1">https://online.stat.psu.edu/stat500/lesson/3/3.1</a>
+</div>
+</div>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

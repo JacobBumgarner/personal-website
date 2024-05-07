@@ -50,7 +50,6 @@ website:
       contents:
         - learning.qmd
         - text: "---"
-        # - text: "<b>Linear Algebra</b>"
         - section: learning_posts/linear_algebra.qmd
           contents: learning_posts/linear_algebra/*
         - section: learning_posts/statistics.qmd

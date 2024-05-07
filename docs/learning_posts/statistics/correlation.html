@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -97,11 +98,40 @@ gtag('js', new Date());
 gtag('config', 'G-QE8LNDL51S', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -118,7 +148,7 @@ gtag('config', 'G-QE8LNDL51S', { 'anonymize_ip': true});
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../../learning.html" aria-current="page"> 
+    <a class="nav-link" href="../../learning.html"> 
 <span class="menu-text">Learning Collection</span></a>
   </li>  
   <li class="nav-item">
@@ -165,85 +195,10 @@ gtag('config', 'G-QE8LNDL51S', { 'anonymize_ip': true});
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../learning_posts/statistics.html">Statistics</a></li><li class="breadcrumb-item"><a href="../../learning_posts/statistics/correlation.html">Correlation</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../learning.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Learning Collection</span></a>
-  </div>
-</li>
-        <li class="px-0"><hr class="sidebar-divider hi "></li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../learning_posts/linear_algebra.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Linear Algebra</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../learning_posts/linear_algebra/rank.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Matrix Rank</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../learning_posts/linear_algebra/vectors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Vectors</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../learning_posts/statistics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Statistics</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../learning_posts/statistics/correlation.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Correlation</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../learning_posts/statistics/correlation/pearson.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Pearson Correlation</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -257,14 +212,13 @@ gtag('config', 'G-QE8LNDL51S', { 'anonymize_ip': true});
   <li><a href="#p-values" id="toc-p-values" class="nav-link" data-scroll-target="#p-values">P Values</a></li>
   </ul></li>
   <li><a href="#correlation-methods" id="toc-correlation-methods" class="nav-link" data-scroll-target="#correlation-methods">Correlation Methods</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../learning_posts/statistics.html">Statistics</a></li><li class="breadcrumb-item"><a href="../../learning_posts/statistics/correlation.html">Correlation</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Correlation</h1>
 </div>
@@ -285,30 +239,53 @@ gtag('config', 'G-QE8LNDL51S', { 'anonymize_ip': true});
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>To evaluate the relationship between two variables, one can measure their correlation.</p>
+<p>In many data-driven contexts, we become interested in understanding the relationship between two variables.</p>
+<p>For example, let’s say we’ve run an experiment to test the effect of a novel drug on immune cell function. To test this drug, we treat 20 cultured dishes of immune cells (<span class="math inline">\(n = 20\)</span>) with a single dose. As an outcome, we measure the concentration of two proteins from the treated cells: protein A and protein B.</p>
+<p>When we evaluate the results from the experiment, we can imagine different possible outcomes of the concentrations of proteins A and B in relation to one another:</p>
+<ol type="1">
+<li>As protein A concentration <em>increases</em>, protein B concentration also <em>increases</em></li>
+<li>As protein A concentration <em>increases</em>, protein B concentration does not change</li>
+<li>As protein A concentration <em>increases</em> protein B concentration <em>decreases</em></li>
+<li>etc…</li>
+</ol>
+<p>As you may have gathered, an important nuance of this example is that we are not particularly interested in understanding whether the concentration of protein A <em>causes</em> the concentration of protein B to change, or vice versa. Instead, we only want to evaluate how their concentrations change in relation to one another. This type of <em>non-causal</em> evaluation is <em>symmetric</em> in nature.</p>
+<p>To evaluate symmetric relationships between two variables, one can examine their <em>correlation</em>. Formally, correlation is a measurement of the the strength, and sometimes direction, of a relationship between two variables<span class="citation" data-cites="wiki:Correlation"><sup><a href="#ref-wiki:Correlation" role="doc-biblioref">1</a></sup></span>. When two variables are related to one another, such as in cases 1 and 3 from our example above, we say that they are correlated.</p>
+<p>Importantly, even if two variables are correlated, we <strong>can not</strong> use this correlation to make any assumptions about the <em>causal</em> nature of their relationship, begging the adage: correlation <span class="math inline">\(\neq\)</span> causation.</p>
+<p>Regardless of whether the relationship between two variables is <em>causal</em> or not, correlation statistics still provide an indication of underlying relationships between</p>
+<p>Often you will see that correlation tests evaluate <em>linear</em> relationships, but some correlation tests evaluate non-linear relationships as well.</p>
 </section>
 <section id="correlation-statistics" class="level2">
 <h2 class="anchored" data-anchor-id="correlation-statistics">Correlation Statistics</h2>
 <section id="coefficients" class="level3">
 <h3 class="anchored" data-anchor-id="coefficients">Coefficients</h3>
+<p>The output of a correlation analysis is a <em>correlation statistic</em>. This statistic will usually fall in the range of <span class="math inline">\(-1\)</span> to <span class="math inline">\(1\)</span>, although depending on the test used, it can sometimes fall between <span class="math inline">\(0\)</span> and <span class="math inline">\(1\)</span>.</p>
 </section>
 <section id="p-values" class="level3">
 <h3 class="anchored" data-anchor-id="p-values">P Values</h3>
+<!-- P value stuff -->
 </section>
 </section>
 <section id="correlation-methods" class="level2">
 <h2 class="anchored" data-anchor-id="correlation-methods">Correlation Methods</h2>
-</section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
-<div id="refs" role="list">
+<p>The next sections of the site contain overviews of several correlation tests. Each method has its own set of strengths and weakness, as well as assumptions that must be met before it can be used.</p>
+<p>For example, we would use a Pearson test to evaluate parametric correlations, and the Spearman test to evaluate non-parametric correlations.</p>
+<ol type="1">
+<li>Pearson Correlation</li>
+<li>Spearman Rank-Order Correlation</li>
+<li>Kendall Rank Correlation</li>
+<li>Point-Biserial Correlation</li>
+<li>Distance Correlation</li>
+</ol>
 
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-wiki:Correlation" class="csl-entry" role="listitem">
+1. Wikipedia. (2024). <em><span>Correlation</span> — <span>W</span>ikipedia<span>,</span> the free encyclopedia</em>. <a href="http://en.wikipedia.org/w/index.php?title=Correlation" class="uri">http://en.wikipedia.org/w/index.php?title=Correlation</a>.
 </div>
-
-
-</section>
-
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

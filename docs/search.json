@@ -14,15 +14,50 @@
     "text": "Welcome to my website. It’s currently a work in progress…\n\n\n\n Back to top"
   },
   {
-    "objectID": "learning_posts/linear_algebra/rank.html",
-    "href": "learning_posts/linear_algebra/rank.html",
-    "title": "Matrix Rank",
+    "objectID": "learning_posts/statistics.html",
+    "href": "learning_posts/statistics.html",
+    "title": "Statistics",
     "section": "",
     "text": "Back to top",
     "crumbs": [
       "Learning Collection",
-      "Linear Algebra",
-      "Matrix Rank"
+      "Statistics"
+    ]
+  },
+  {
+    "objectID": "learning_posts/statistics/variance/variance.html",
+    "href": "learning_posts/statistics/variance/variance.html",
+    "title": "Variance - Draft",
+    "section": "",
+    "text": "Variance is a quantitative measurement of the spread of a set of data around the mean of the data.\n\n\n\nVarying Distributions\n\n\nIn descriptive statistics, variance is used to describe the distribution of a sample or population. In inferential statistics, variance is a measurement used to measure the expected variability of a random variablea.\n\n\naRandom variables are functions that map sample spaces (e.g., \\(\\{ H, T \\}\\) is the sample space of a coin flip) to a measurable space (e.g., \\(\\{ H: 0, T: 1\n\\}\\)). By definition, a random variable generates values that vary randomly1,2.",
+    "crumbs": [
+      "Learning Collection",
+      "Statistics",
+      "Variance - Draft"
+    ]
+  },
+  {
+    "objectID": "learning_posts/statistics/variance/variance.html#overview",
+    "href": "learning_posts/statistics/variance/variance.html#overview",
+    "title": "Variance - Draft",
+    "section": "",
+    "text": "Variance is a quantitative measurement of the spread of a set of data around the mean of the data.\n\n\n\nVarying Distributions\n\n\nIn descriptive statistics, variance is used to describe the distribution of a sample or population. In inferential statistics, variance is a measurement used to measure the expected variability of a random variablea.\n\n\naRandom variables are functions that map sample spaces (e.g., \\(\\{ H, T \\}\\) is the sample space of a coin flip) to a measurable space (e.g., \\(\\{ H: 0, T: 1\n\\}\\)). By definition, a random variable generates values that vary randomly1,2.",
+    "crumbs": [
+      "Learning Collection",
+      "Statistics",
+      "Variance - Draft"
+    ]
+  },
+  {
+    "objectID": "learning_posts/statistics/variance/variance.html#references",
+    "href": "learning_posts/statistics/variance/variance.html#references",
+    "title": "Variance - Draft",
+    "section": "References",
+    "text": "References\n\n\n1. Wikipedia. (2024). Random variable — Wikipedia, the free encyclopedia. http://en.wikipedia.org/w/index.php?title=Random%20variable.\n\n\n2. 3.1 - Random Variables  STAT 500. (2024). https://online.stat.psu.edu/stat500/lesson/3/3.1",
+    "crumbs": [
+      "Learning Collection",
+      "Statistics",
+      "Variance - Draft"
     ]
   },
   {
@@ -36,6 +71,46 @@
       "Linear Algebra",
       "Vectors"
     ]
+  },
+  {
+    "objectID": "learning_posts/linear_algebra/rank.html",
+    "href": "learning_posts/linear_algebra/rank.html",
+    "title": "Matrix Rank",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Learning Collection",
+      "Linear Algebra",
+      "Matrix Rank"
+    ]
+  },
+  {
+    "objectID": "learning_posts/statistics/correlation.html",
+    "href": "learning_posts/statistics/correlation.html",
+    "title": "Correlation",
+    "section": "",
+    "text": "In many data-driven contexts, we become interested in understanding the relationship between two variables.\nFor example, let’s say we’ve run an experiment to test the effect of a novel drug on immune cell function. To test this drug, we treat 20 cultured dishes of immune cells (\\(n = 20\\)) with a single dose. As an outcome, we measure the concentration of two proteins from the treated cells: protein A and protein B.\nWhen we evaluate the results from the experiment, we can imagine different possible outcomes of the concentrations of proteins A and B in relation to one another:\n\nAs protein A concentration increases, protein B concentration also increases\nAs protein A concentration increases, protein B concentration does not change\nAs protein A concentration increases protein B concentration decreases\netc…\n\nAs you may have gathered, an important nuance of this example is that we are not particularly interested in understanding whether the concentration of protein A causes the concentration of protein B to change, or vice versa. Instead, we only want to evaluate how their concentrations change in relation to one another. This type of non-causal evaluation is symmetric in nature.\nTo evaluate symmetric relationships between two variables, one can examine their correlation. Formally, correlation is a measurement of the the strength, and sometimes direction, of a relationship between two variables1. When two variables are related to one another, such as in cases 1 and 3 from our example above, we say that they are correlated.\nImportantly, even if two variables are correlated, we can not use this correlation to make any assumptions about the causal nature of their relationship, begging the adage: correlation \\(\\neq\\) causation.\nRegardless of whether the relationship between two variables is causal or not, correlation statistics still provide an indication of underlying relationships between\nOften you will see that correlation tests evaluate linear relationships, but some correlation tests evaluate non-linear relationships as well."
+  },
+  {
+    "objectID": "learning_posts/statistics/correlation.html#overview",
+    "href": "learning_posts/statistics/correlation.html#overview",
+    "title": "Correlation",
+    "section": "",
+    "text": "In many data-driven contexts, we become interested in understanding the relationship between two variables.\nFor example, let’s say we’ve run an experiment to test the effect of a novel drug on immune cell function. To test this drug, we treat 20 cultured dishes of immune cells (\\(n = 20\\)) with a single dose. As an outcome, we measure the concentration of two proteins from the treated cells: protein A and protein B.\nWhen we evaluate the results from the experiment, we can imagine different possible outcomes of the concentrations of proteins A and B in relation to one another:\n\nAs protein A concentration increases, protein B concentration also increases\nAs protein A concentration increases, protein B concentration does not change\nAs protein A concentration increases protein B concentration decreases\netc…\n\nAs you may have gathered, an important nuance of this example is that we are not particularly interested in understanding whether the concentration of protein A causes the concentration of protein B to change, or vice versa. Instead, we only want to evaluate how their concentrations change in relation to one another. This type of non-causal evaluation is symmetric in nature.\nTo evaluate symmetric relationships between two variables, one can examine their correlation. Formally, correlation is a measurement of the the strength, and sometimes direction, of a relationship between two variables1. When two variables are related to one another, such as in cases 1 and 3 from our example above, we say that they are correlated.\nImportantly, even if two variables are correlated, we can not use this correlation to make any assumptions about the causal nature of their relationship, begging the adage: correlation \\(\\neq\\) causation.\nRegardless of whether the relationship between two variables is causal or not, correlation statistics still provide an indication of underlying relationships between\nOften you will see that correlation tests evaluate linear relationships, but some correlation tests evaluate non-linear relationships as well."
+  },
+  {
+    "objectID": "learning_posts/statistics/correlation.html#correlation-statistics",
+    "href": "learning_posts/statistics/correlation.html#correlation-statistics",
+    "title": "Correlation",
+    "section": "Correlation Statistics",
+    "text": "Correlation Statistics\n\nCoefficients\nThe output of a correlation analysis is a correlation statistic. This statistic will usually fall in the range of \\(-1\\) to \\(1\\), although depending on the test used, it can sometimes fall between \\(0\\) and \\(1\\).\n\n\nP Values"
+  },
+  {
+    "objectID": "learning_posts/statistics/correlation.html#correlation-methods",
+    "href": "learning_posts/statistics/correlation.html#correlation-methods",
+    "title": "Correlation",
+    "section": "Correlation Methods",
+    "text": "Correlation Methods\nThe next sections of the site contain overviews of several correlation tests. Each method has its own set of strengths and weakness, as well as assumptions that must be met before it can be used.\nFor example, we would use a Pearson test to evaluate parametric correlations, and the Spearman test to evaluate non-parametric correlations.\n\nPearson Correlation\nSpearman Rank-Order Correlation\nKendall Rank Correlation\nPoint-Biserial Correlation\nDistance Correlation"
   },
   {
     "objectID": "learning_posts/linear_algebra.html",
@@ -56,140 +131,6 @@
     "text": "Construction in progress… \nWelcome to my learning collection. The educational articles in this collection were created for the educational benefit of myself and others.\n\nOverview\nEach article is created with the Feynman technique in mind, drawing inspiration from expert educators, including Grant Sanderson, Steve Mould, Gilbert Strang, and Destin Sandlin.\nBy writing these articles, I hope to distill the fundamental gist of each topic such that anyone can understand them. Of course, the topics I cover aren’t exhaustive and aren’t meant to replace textbooks or other online learning mediums. Instead, I hope they act as foundations for the introduction to topics or supplemental materials for the mastery of topics.\n\n\nTopics\nBelow is a list of the topics with covered material. Many of these topics have sub-sections, which can be opened by clicking the dropdown arrows.\n\nStatistics\nLinear Algebra\nMachine Learning\nDeep Learning\nBioinformatics\n\n\n\nResources\nBelow is a list of the resources I use to create these articles.\n\nManim\nCiteDrive\nQuarto\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Learning Collection"
-    ]
-  },
-  {
-    "objectID": "learning.html#topics",
-    "href": "learning.html#topics",
-    "title": "Learning Collection",
-    "section": "Topics",
-    "text": "Topics\nBelow is a list of the topics with covered material. Many of these topics have sub-sections, which can be opened by clicking the dropdown arrows.\n\nStatistics\nLinear Algebra\nMachine Learning\nDeep Learning\nBioinformatics",
-    "crumbs": [
-      "Learning Collection"
-    ]
-  },
-  {
-    "objectID": "learning.html#footnotes",
-    "href": "learning.html#footnotes",
-    "title": "Learning Collection",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\n1↩︎",
-    "crumbs": [
-      "Learning Collection"
-    ]
-  },
-  {
-    "objectID": "learning.html#statistics",
-    "href": "learning.html#statistics",
-    "title": "Learning Collection",
-    "section": "Statistics",
-    "text": "Statistics",
-    "crumbs": [
-      "Learning Collection"
-    ]
-  },
-  {
-    "objectID": "learning.html#linear-algebra",
-    "href": "learning.html#linear-algebra",
-    "title": "Learning Collection",
-    "section": "Linear Algebra",
-    "text": "Linear Algebra",
-    "crumbs": [
-      "Learning Collection"
-    ]
-  },
-  {
-    "objectID": "learning.html#overview",
-    "href": "learning.html#overview",
-    "title": "Learning Collection",
-    "section": "Overview",
-    "text": "Overview\nEach article is created with the Feynman technique in mind, drawing inspiration from expert educators, including Grant Sanderson, Steve Mould, Gilbert Strang, and Destin Sandlin.\nBy writing these articles, I hope to distill the fundamental gist of each topic such that anyone can understand them. Of course, the topics I cover aren’t exhaustive and aren’t meant to replace textbooks or other online learning mediums. Instead, I hope they act as foundations for the introduction to topics or supplemental materials for the mastery of topics.",
-    "crumbs": [
-      "Learning Collection"
-    ]
-  },
-  {
-    "objectID": "learning_posts/statistics.html",
-    "href": "learning_posts/statistics.html",
-    "title": "Statistics",
-    "section": "",
-    "text": "Back to top",
-    "crumbs": [
-      "Learning Collection",
-      "Statistics"
-    ]
-  },
-  {
-    "objectID": "learning_posts/statistics/correlation.html",
-    "href": "learning_posts/statistics/correlation.html",
-    "title": "Correlation",
-    "section": "",
-    "text": "To evaluate the relationship between two variables, one can measure their correlation.",
-    "crumbs": [
-      "Learning Collection",
-      "Statistics",
-      "Correlation"
-    ]
-  },
-  {
-    "objectID": "learning_posts/statistics/correlation/pearson.html",
-    "href": "learning_posts/statistics/correlation/pearson.html",
-    "title": "Pearson Correlation",
-    "section": "",
-    "text": "This is all about Pearson correlation.\n\n\n\n Back to top",
-    "crumbs": [
-      "Learning Collection",
-      "Statistics",
-      "Correlation",
-      "Pearson Correlation"
-    ]
-  },
-  {
-    "objectID": "learning_posts/statistics/correlation.html#references",
-    "href": "learning_posts/statistics/correlation.html#references",
-    "title": "Correlation",
-    "section": "References",
-    "text": "References",
-    "crumbs": [
-      "Learning Collection",
-      "Statistics",
-      "Correlation"
-    ]
-  },
-  {
-    "objectID": "learning_posts/statistics/correlation.html#overview",
-    "href": "learning_posts/statistics/correlation.html#overview",
-    "title": "Correlation",
-    "section": "",
-    "text": "To evaluate the relationship between two variables, one can measure their correlation.",
-    "crumbs": [
-      "Learning Collection",
-      "Statistics",
-      "Correlation"
-    ]
-  },
-  {
-    "objectID": "learning_posts/statistics/correlation.html#correlation-statistics",
-    "href": "learning_posts/statistics/correlation.html#correlation-statistics",
-    "title": "Correlation",
-    "section": "Correlation Statistics",
-    "text": "Correlation Statistics\n\nCoefficients\n\n\nP Values",
-    "crumbs": [
-      "Learning Collection",
-      "Statistics",
-      "Correlation"
-    ]
-  },
-  {
-    "objectID": "learning_posts/statistics/correlation.html#correlation-methods",
-    "href": "learning_posts/statistics/correlation.html#correlation-methods",
-    "title": "Correlation",
-    "section": "Correlation Methods",
-    "text": "Correlation Methods",
-    "crumbs": [
-      "Learning Collection",
-      "Statistics",
-      "Correlation"
     ]
   }
 ]
