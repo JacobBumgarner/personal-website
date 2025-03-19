@@ -16,7 +16,7 @@ website:
   google-analytics: 
     tracking-id: "G-QE8LNDL51S"
   page-footer: 
-    left: "© 2024 Jacob Bumgarner, Ph.D."
+    left: "© 2025 Jacob Bumgarner, Ph.D."
     border: false
   navbar:
     left:
@@ -24,8 +24,8 @@ website:
       #   file: index.qmd
       - text: "About"
         file: index.qmd
-      - text: "Learning Collection"
-        file: learning.qmd
+      # - text: "Learning Collection"
+      #   file: learning.qmd
     right:
       - icon: linkedin
         href: https://www.linkedin.com/in/jacob-bumgarner/
@@ -43,18 +43,18 @@ website:
     location: navbar
     type: textbox
 
-  sidebar:
-    - id: learning
-      style: "docked" 
-      collapse-level: 1
-      contents:
-        - learning.qmd
-        - text: "---"
-        - section: learning_posts/linear_algebra.qmd
-          contents: learning_posts/linear_algebra/*
-        - section: learning_posts/statistics.qmd
-          contents: 
-            - learning_posts/statistics/variance/variance.qmd
+  # sidebar:
+  #   - id: learning
+  #     style: "docked" 
+  #     collapse-level: 1
+  #     contents:
+  #       - learning.qmd
+  #       - text: "---"
+  #       - section: learning_posts/linear_algebra.qmd
+  #         contents: learning_posts/linear_algebra/*
+  #       - section: learning_posts/statistics.qmd
+  #         contents: 
+  #           - learning_posts/statistics/variance/variance.qmd
 
 format:
   html:
