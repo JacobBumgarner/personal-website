@@ -30,7 +30,7 @@ Please feel free to connect with me through the links above.
 ### Career
 I am currently a computational biologist specializing in reverse translational and
 predictive sciences for drug development. I work to expand our understanding of
-the mechanisms that drive neurodegenerative and autoimmune disease.
+the mechanisms that drive neurodegenerative and autoimmune diseases.
 
 My experience encompasses computational biology, bioinformatics, software engineering,
 and machine learning. I am driven by a passion for problem-solving and applying
