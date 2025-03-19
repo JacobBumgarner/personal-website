@@ -22,18 +22,17 @@ about:
 ---
 
 ### About
-My name is Jacob Bumgarner. I'm an avid learner with a passion for creating and
-writing. This website serves as a central hub for the insights and lessons I
-create while exploring new concepts and revisiting topics of interest.
+My name is Jacob Bumgarner. I'm computational biologist with a passion for building
+and writing.
 
-Please feel free to reach out or connect with me through the links above.
+Please feel free to connect with me through the links above.
 
 ### Career
-I am a bioinformatics scientist specializing in predictive sciences for drug
-development, currently part of a precision discovery team. We use reverse
-translational approaches to identify novel drug targets.
+I am currently a computational biologist specializing in reverse translational and
+predictive sciences for drug development. I work to expand our understanding of
+the mechanisms that drive neurodegenerative and autoimmune disease.
 
-My experience encompasses bioinformatics, data analytics, software engineering,
+My experience encompasses computational biology, bioinformatics, software engineering,
 and machine learning. I am driven by a passion for problem-solving and applying
 my skills to improve human health.
 
